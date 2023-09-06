@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
+html, body {
+  color: #191919;
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-theme {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-theme i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-theme:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+.btn-theme2 {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-theme2 i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-theme2:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+.btn-theme3 {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 150px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+  font-family: "inter" sans-serif;
+}
+.btn-theme3 i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-theme3:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+header {
+  background-color: #F0EFE9;
+  padding: 16px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+header .container .menu-bars {
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
+header .container .menu {
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
+}
+header .container .menu .top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #DAD9D3;
+  padding-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+  }
+}
+header .container .menu .top-menu .contact-information {
+  display: none;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+  }
+}
+header .container .menu .top-menu .contact-information .content-box {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #DAD9D3;
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+header .container .menu .top-menu .contact-information .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+  color: #666666;
+}
+header .container .menu .top-menu .contact-information .content-box.last {
+  border: none;
+}
+header .container .menu .top-menu .social-media a {
+  color: #191919;
+  font-size: 1.3rem;
+  margin-left: 13px;
+}
+header .container .menu .top-menu .social-media a:hover {
+  color: #969696;
+}
+header .container .menu .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+header .container .menu .main-menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+header .container .menu .main-menu nav a.active {
+  font-weight: 500;
+}
+header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+  content: "";
+  font-weight: 500;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+header .container .menu .main-menu .btn-theme {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+header .container .menu .main-menu .btn-theme i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+header .container .menu .main-menu .btn-theme:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+.showcase {
+  background-color: #F0EFE9;
+}
+.showcase .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showcase .container .content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content {
+    text-align: left;
+  }
+}
+.showcase .container .content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .content h1 {
+    font-size: 86px;
+  }
+}
+.showcase .container .content p {
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content p {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.showcase .container .content a {
+  margin-right: 0px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content a {
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.showcase .container img {
+  display: none;
+  margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container img {
+    display: block;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 85px;
+  padding-left: 390px;
+  padding-right: 340px;
+  padding-bottom: 85px;
+}
+.top .border1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid white;
+}
+.top .border1 .Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 118px;
+}
+.top .border1 .Logo img {
+  width: 200%;
+  display: none;
+  margin-right: 10px;
+}
+@media (min-width: 1200px) {
+  .top .border1 .Logo img {
+    display: block;
+  }
+}
+
+.middle-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle-part .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.middle-part .container .border {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  width: 1520px;
+}
+.middle-part .container .border .content-box-3 {
+  padding-left: 98px;
+  padding-right: 100px;
+  padding-bottom: 216px;
+  padding-top: 70px;
+  height: 850px;
+}
+.middle-part .container .border .content-box-3 p {
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+  margin-top: 150px;
+  margin-bottom: 31px;
+}
+.middle-part .container .border .content-box-3 h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.middle-part .container .border .content-box-1 {
+  display: flexbox;
+  align-items: start;
+  padding-right: 175px;
+  padding-bottom: 300px;
+  height: 220px;
+  width: 800px;
+}
+.middle-part .container .border .content-box-1 h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.middle-part .container .border .content-box-1 p {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.middle-part .container .border .content-box-1 i {
+  font-size: 22px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.middle-part .container .border .content-box-2 {
+  padding-right: 260px;
+  padding-bottom: 300px;
+  height: 220px;
+  width: 800px;
+}
+.middle-part .container .border .content-box-2 .child-box {
+  height: 164, 82px;
+  width: 227px;
+}
+.middle-part .container .border .content-box-2 .child-box h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.middle-part .container .border .content-box-2 .child-box p {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.middle-part .container .border .content-box-2 .child-box i {
+  font-size: 22px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
