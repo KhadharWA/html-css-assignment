@@ -127,6 +127,12 @@ html, body {
   font-weight: 700;
   font-size: 45px;
 }
+.section-title h4 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
 
 .center-content {
   display: flex;
@@ -849,6 +855,250 @@ header .container .menu .main-menu .btn-theme:hover {
 .project-and-case .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
+}
+
+.team-members {
+  background-color: #f0d082;
+}
+.team-members .container .tophead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-members .container .tophead .right-content .btn-yellow {
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.team-members .container .tophead .right-content i {
+  padding-left: 8px;
+}
+.team-members .container .team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-members .container .team h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+.team-members .container .team p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.5647058824);
+}
+.team-members .container .center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.team-members .container .center-content .dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(25, 25, 25, 0.3137254902);
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.team-members .container .center-content .dot:hover {
+  background-color: #191919;
+}
+.team-members .container .center-content .dot-black {
+  width: 12px;
+  height: 12px;
+  background-color: #191919;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.review {
+  height: 1000px;
+  padding-top: 20px;
+  background-color: #f0d082;
+}
+.review .container {
+  background-color: #FFFFFF;
+  height: 887px;
+  width: 100%;
+}
+.review .container .section-title {
+  text-align: center;
+}
+.review .container .reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 75px;
+  box-sizing: border-box;
+}
+.review .container .reviews .the-review {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 400px;
+  height: 340px;
+}
+.review .container .reviews .the-review .ratings .checked {
+  color: #F94D1C;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.review .container .reviews .the-review .text {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+.review .container .reviews .the-review .name {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.review .container .reviews .the-review .name .left-img {
+  float: left;
+  margin-right: 10px;
+}
+.review .container .reviews .the-review .name .right-info h5 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+.review .container .reviews .the-review .name .right-info p {
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+.review .container .center-content {
+  padding: 60px;
+}
+.review .container .center-content .btn-black {
+  padding: 15px 39px;
+}
+.review .container .center-content .btn-black i {
+  margin-left: 10px;
+}
+
+.article-news .container .tophead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-news .container .tophead .right-content .btn-white {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 45px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.article-news .container .tophead .right-content .btn-white i {
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+.article-news .container .tophead .right-content .btn-white:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+.article-news .container .News {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.article-news .container .News p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6A6C71;
+  padding-top: 20px;
+}
+.article-news .container .News h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.article-news .container .center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.article-news .container .center-content .dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(25, 25, 25, 0.3137254902);
+  border-radius: 50%;
+  margin: 0 7px;
+}
+.article-news .container .center-content .dot:hover {
+  background-color: #191919;
+}
+.article-news .container .center-content .dot-black {
+  width: 12px;
+  height: 12px;
+  background-color: #191919;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.signup {
+  background-color: #F0EFE9;
+  height: 270px;
+}
+.signup .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup .container .section-title {
+  margin-bottom: 25px;
+}
+.signup .container .signup-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup .container .signup-info .white {
+  background-color: #FFFFFF;
+  width: 308px;
+  color: rgba(25, 25, 25, 0.3137254902);
+  color: rgba(25, 25, 25, 0.3137254902);
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px;
+  font-family: "inter" sans-serif;
+  margin-right: 36px;
+  margin-bottom: 0;
+}
+.signup .container .signup-info .btn-yellow {
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px;
+  font-family: "inter" sans-serif;
+  margin-right: 25px;
+}
+.signup .container .signup-info .btn-yellow i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.signup .container .signup-info .btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
 }
 
 .banner {
