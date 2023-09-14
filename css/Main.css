@@ -140,6 +140,7 @@ html, body {
   align-items: center;
 }
 
+/* header section */
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -261,6 +262,7 @@ header .container .menu .main-menu .btn-theme:hover {
   color: #F0EFE9;
 }
 
+/* showcase section */
 .showcase {
   background-color: #F0EFE9;
 }
@@ -331,38 +333,34 @@ header .container .menu .main-menu .btn-theme:hover {
   }
 }
 
+/* top section */
 .top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 85px;
-  padding-left: 390px;
-  padding-right: 340px;
   padding-bottom: 85px;
 }
-.top .border1 {
+.top .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 0px solid white;
+  justify-content: space-between;
 }
-.top .border1 .Logo {
+.top .container .Logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 118px;
 }
-.top .border1 .Logo img {
+.top .container .Logo img {
   width: 200%;
   display: none;
   margin-right: 10px;
 }
 @media (min-width: 1200px) {
-  .top .border1 .Logo img {
+  .top .container .Logo img {
     display: block;
   }
 }
 
+/* Features section */
 .Features {
   display: flex;
   align-items: center;
@@ -397,7 +395,6 @@ header .container .menu .main-menu .btn-theme:hover {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
-  padding-top: 44px;
   padding-bottom: 44px;
 }
 .Features .container .border .content-box-1 {
@@ -449,6 +446,7 @@ header .container .menu .main-menu .btn-theme:hover {
   padding-bottom: 28px;
 }
 
+/* About section */
 .About {
   padding-bottom: 120px;
 }
@@ -543,6 +541,7 @@ header .container .menu .main-menu .btn-theme:hover {
   font-weight: 600;
 }
 
+/* services section */
 .services {
   width: 100%;
   padding: 120px;
@@ -687,6 +686,7 @@ header .container .menu .main-menu .btn-theme:hover {
   font-size: 0.9em;
 }
 
+/* info section */
 .info .container {
   display: flex;
   justify-content: space-between;
@@ -806,6 +806,7 @@ header .container .menu .main-menu .btn-theme:hover {
   padding: 20px;
 }
 
+/* project & case studies section */
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -857,6 +858,7 @@ header .container .menu .main-menu .btn-theme:hover {
   margin-bottom: 90px;
 }
 
+/* Team Members section */
 .team-members {
   background-color: #f0d082;
 }
@@ -916,6 +918,7 @@ header .container .menu .main-menu .btn-theme:hover {
   margin: 0 5px;
 }
 
+/* Review section */
 .review {
   height: 1000px;
   padding-top: 20px;
@@ -983,6 +986,7 @@ header .container .menu .main-menu .btn-theme:hover {
   margin-left: 10px;
 }
 
+/* Article & News section */
 .article-news .container .tophead {
   display: flex;
   justify-content: space-between;
@@ -1050,6 +1054,7 @@ header .container .menu .main-menu .btn-theme:hover {
   margin: 0 5px;
 }
 
+/* Signup section */
 .signup {
   background-color: #F0EFE9;
   height: 270px;
@@ -1101,6 +1106,8 @@ header .container .menu .main-menu .btn-theme:hover {
   color: #F0EFE9;
 }
 
+/* Contact.html style */
+/* banner section */
 .banner {
   background-color: #F0EFE9;
   display: flex;
@@ -1133,6 +1140,7 @@ header .container .menu .main-menu .btn-theme:hover {
   margin-top: 20px;
 }
 
+/* listaa section */
 .listaa {
   padding-top: 120px;
   display: flex;
@@ -1187,6 +1195,7 @@ header .container .menu .main-menu .btn-theme:hover {
   margin: 0;
 }
 
+/* leave massage section */
 .leave-massage {
   padding-top: 80px;
 }
@@ -1250,6 +1259,7 @@ header .container .menu .main-menu .btn-theme:hover {
   justify-content: center;
 }
 
+/* Google map section */
 .Google-map {
   padding-top: 110px;
 }
@@ -1258,6 +1268,8 @@ header .container .menu .main-menu .btn-theme:hover {
   height: 620px;
 }
 
+/* footer for both main and contact page */
+/* footer section */
 .footer {
   background-color: #0E1021;
   height: 513px;
@@ -1304,6 +1316,7 @@ header .container .menu .main-menu .btn-theme:hover {
   color: #969696;
 }
 
+/* Copy right section */
 .copyright {
   background-color: #0E1021;
   border-top: 1px solid #666666;
