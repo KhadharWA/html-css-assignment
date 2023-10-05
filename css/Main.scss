@@ -26,6 +26,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -48,6 +49,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -71,6 +73,7 @@ html, body {
     font-size: 16px;
     border-radius: 25px;
     font-family: 'inter' sans-serif;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -95,6 +98,7 @@ html, body {
     border-radius: 25px;
     font-family: 'inter' sans-serif;
     margin-right: 36px;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
      i {
     margin-left: 8px;
@@ -229,6 +233,7 @@ header {
                         color: #191919;
                         font-size: 1.3rem;
                         margin-left: 13px;
+                        transition: color 0.25s ease-in-out;
                         &:hover {
                             color: #969696;
                         }
@@ -277,7 +282,8 @@ header {
                     padding: 8px 25px;
                     font-weight: 600;
                     font-size: 16px;
-                    border-radius: 25px;                
+                    border-radius: 25px;
+                    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;                
                 
                     i {
                         margin-left: 8px;
@@ -385,23 +391,31 @@ header {
     padding-bottom: 85px;
 
     @media (max-width: 768px) {
-        display: none;
+        padding-top: 50px;
+        padding-bottom: 0;
     }
     
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .Logo {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 118px;
+            
+            @media (max-width: 768px) {
+                display: inline-block;
+                margin-right: 10px;
+            }
         
             img {
-                width: 200%;
-                display: none;
-            margin-right: 10px;
+                width: 100%;
+                margin-right: 10px;
+                
+
 
                 @media (min-width: 1200px) {
                 display: block;
@@ -605,17 +619,27 @@ header {
                    
                 .play-button {          
                     cursor: pointer;
-                    padding: 10px;
+                    padding: 15px 19px;
                     background-color: #FFFFFF;
                     border: 1px solid black;
                     border-radius: 25px;
                     font-size: 14px;
-                    margin-right: 10px;     
+                    margin-right: 10px;
+                    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+                      
+                    &:hover {
+                        background-color: #000000;
+                        color: #FFFFFF; 
+                    }
                 }
                 .play-text {
                     font-family: 'inter', sans-serif;
                     font-size: 16px;
                     font-weight: 600;   
+                }
+
+                .btn-black {
+                    margin-right: 25px;
                 }
             }
         }
@@ -635,6 +659,10 @@ header {
         bottom: 0;
         right: 0;
         z-index: -1;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     @media (max-width: 768px) {
@@ -721,6 +749,10 @@ header {
                     background-color: #F9D783;
                     border-radius: 5px;
 
+                    &:hover {
+                        background-color: #f0d082;
+                    }
+
                     @media (max-width: 768px) {
                         height: 250px;
                         padding: 5px 0;
@@ -750,10 +782,17 @@ header {
                         position: absolute;
                         bottom: 0;
                         right: 0;
+                        text-decoration: none;
+                        color: #191919;
+                        transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 
-                        .arrow-up-2{
-                            color: #191919;
+                        i{
                             font-size: 26px;
+                        }
+                        
+                        &:hover {
+                            background-color: #191919;
+                            color: #ffffff;
                         }
                     }                     
                 }
@@ -765,6 +804,7 @@ header {
                     padding-top: 40px;
                     position: relative;
                     
+                    
                         
                     &.panel-content::before {
                         position: absolute;
@@ -772,7 +812,7 @@ header {
                         border-top: 1px solid #191919;
                         content: '';
                         top: 0;
-                        left: 8.3%;
+                        left: 20px;
                         right: 0;
                         height: 1.5px;
                         width: 15%;
@@ -790,11 +830,20 @@ header {
                         position: absolute;
                         bottom: 0;
                         right: 0;
-
-                        .arrow-up {
-                            color: #FFFFFF;
+                        text-decoration: none;
+                        color: #FFFFFF;
+                        transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+                        
+                        i {
                             font-size: 26px;
                         }
+
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: #191919;
+                        }
+
+                        
                     }
                 }
         
@@ -806,6 +855,11 @@ header {
                     padding-top: 30px;
                     background-color: #FFFFFF;
                     border-radius: 5px;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: #f0d082;
+                    }
 
                     @media (max-width: 768px) {
                         height: 250px;
@@ -838,6 +892,7 @@ header {
         }
     }
 }
+
 
 /* info section */
 .info {
@@ -1176,6 +1231,8 @@ header {
                 background-color: #19191950;
                 border-radius: 50%;
                 margin: 0 5px;
+                cursor: pointer;
+                transition: background-color 0.15s ease-in-out;
 
                 &:hover {
                     background-color: #191919;
@@ -1189,6 +1246,7 @@ header {
                 background-color: #191919;
                 border-radius: 50%;
                 margin: 0 5px;
+                cursor: pointer;
 
             }
         }
@@ -1250,19 +1308,21 @@ header {
                         display: flex;
                         justify-content: space-between;
                     }
-                    .stars {
-
-                        .checked {
-                            color: #F94D1C;
-                            margin-bottom: 30px;
-                            font-weight: 600;
-                        }
+                    i {
+                        color: #F94D1C;
+                        margin-bottom: 30px;
+                        font-weight: 600;
+                        
                     }
                     .review-text {
                         border: none;
                         font-size: 25px;
                         background-color: transparent;
                         margin-bottom: 25px;
+
+                        i {
+                            color: #000000; 
+                       }
 
                         @media (min-width: 992px) {
                             display: none;
@@ -1369,6 +1429,7 @@ header {
                     font-weight: 600;
                     font-size: 16px;
                     border-radius: 25px;
+                    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
                 
                 
                     i {
@@ -1397,8 +1458,14 @@ header {
                 grid-template-columns: 1fr;
                 width: 100%;
             }
-            article {
+            a {
                 width: 100%;
+                text-decoration: none;
+                transition: box-shadow 0.25s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0 0 2px 3px #F9D783;
+                }
 
                 @media (max-width: 768px) {
                     padding-top: 50px;
@@ -1406,9 +1473,9 @@ header {
 
                 img{
                     width: 100%;
+
                     @media (max-width: 768px) {
                         width: 100%;
-                        
                     }
                 }
 
@@ -1418,7 +1485,7 @@ header {
                     font-size: 16px;
                     color: #6A6C71;
                     padding-top: 20px;
-    
+                    text-decoration: none;
                 }
     
                 h3 {
@@ -1426,7 +1493,13 @@ header {
                     font-size: 22px;
                     font-weight: 700;
                     margin: 0;
-    
+                    color: #191919;
+                    transition: color 0.2s ease-in-out, text-decoration 0.3s ease-in-out;
+                    
+                    &:hover {
+                        color: #69b3f9;
+                        text-decoration: underline;
+                    }
                 }
             }
             
@@ -1439,29 +1512,23 @@ header {
             padding: 50px;
 
 
-            .dot {
+            i {
                 width: 12px;
                 height: 12px;
-                background-color: #19191950;
                 border-radius: 50%;
                 margin: 0 7px;
+                cursor: pointer;
+                font-size: 12px;
+                transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+                
 
                 &:hover {
                     background-color: #191919;
                 }
 
-            }
-
-            .dot-black {
-                width: 12px;
-                height: 12px;
-                background-color: #191919;
-                border-radius: 50%;
-                margin: 0 5px;
-
-
-                
-
+                &#active {
+                    background-color: #191919;
+                }
             }
         }
     }
@@ -1562,6 +1629,7 @@ header {
                 display: flex;
                 justify-content: center;
                 max-width: 171px;
+                cursor: pointer;
 
 
                 @media (max-width: 768px) {
@@ -1628,6 +1696,10 @@ header {
                 
                 &:hover {
                     text-decoration: underline;
+                    font-weight: 500;
+                    height: 2px;
+                    width: 25px;
+                    transform: translate((calc(50% - 15px)));
                 }                                            
             }
             
@@ -1772,7 +1844,6 @@ header {
                     font-family: 'inter' sans-serif;
                     margin-right: 36px;
                     border: none;
-                    outline: none;
                     width: 100%;                           
                     
                     @media (max-width: 768px) {
@@ -1797,7 +1868,6 @@ header {
                     font-family: 'inter' sans-serif;
                     margin-right: 36px;
                     border: none;
-                    outline: none;
                     display: flex;
                     align-items: start;
                     justify-content: start;
@@ -1842,7 +1912,11 @@ header {
 
 /* Google map section */
 .Google-map {
-    padding-top: 110px;
+    padding-top: 120px;
+
+    @media (max-width: 768px) {
+        padding-top: 50px;
+    }
 
     iframe {
         width: 100%;
@@ -1985,6 +2059,7 @@ header {
                 color: #FFFFFF;
                 font-size: 1.3rem;
                 margin-left: 13px;
+                transition: color 0.3s ease-in-out;
 
                 @media (max-width: 768px) {
                     margin-left: 0;
