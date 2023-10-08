@@ -748,6 +748,7 @@ header {
                     padding-top: 30px;
                     background-color: #F9D783;
                     border-radius: 5px;
+                    transition: background-color 0.25s ease-in-out;
 
                     &:hover {
                         background-color: #f0d082;
@@ -784,15 +785,9 @@ header {
                         right: 0;
                         text-decoration: none;
                         color: #191919;
-                        transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
-
+                        
                         i{
                             font-size: 26px;
-                        }
-                        
-                        &:hover {
-                            background-color: #191919;
-                            color: #ffffff;
                         }
                     }                     
                 }
@@ -842,8 +837,6 @@ header {
                             background-color: #FFFFFF;
                             color: #191919;
                         }
-
-                        
                     }
                 }
         
@@ -1110,6 +1103,7 @@ header {
                     font-weight: 500;
                     color: #191919;
                     padding: 15px;
+                    transition: color 0.2s ease-in-out,text-decoration 0.3s ease-in-out;
 
                     i {
                         margin-left: 3px;
@@ -1117,6 +1111,7 @@ header {
 
                     &:hover {
                         text-decoration: underline;
+                        color: #F94D1C;
                     }
                 }
             }

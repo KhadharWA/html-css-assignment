@@ -695,6 +695,7 @@ header .container .menu .main-menu .btn-theme:hover {
   padding-top: 30px;
   background-color: #F9D783;
   border-radius: 5px;
+  transition: background-color 0.25s ease-in-out;
 }
 .services .container .center-content1 .main .panel-2:hover {
   background-color: #f0d082;
@@ -729,14 +730,9 @@ header .container .menu .main-menu .btn-theme:hover {
   right: 0;
   text-decoration: none;
   color: #191919;
-  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .services .container .center-content1 .main .panel-2 .arrow-circle-2 i {
   font-size: 26px;
-}
-.services .container .center-content1 .main .panel-2 .arrow-circle-2:hover {
-  background-color: #191919;
-  color: #ffffff;
 }
 .services .container .center-content1 .main .panel-content {
   width: 248px;
@@ -1006,12 +1002,16 @@ header .container .menu .main-menu .btn-theme:hover {
   font-weight: 500;
   color: #191919;
   padding: 15px;
+  transition: color 0.2s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out, text-decoration 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out, text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
 }
 .project-and-case .container .project-and-cases article a i {
   margin-left: 3px;
 }
 .project-and-case .container .project-and-cases article a:hover {
   text-decoration: underline;
+  color: #F94D1C;
 }
 .project-and-case .container .center-content {
   margin-top: 50px;
